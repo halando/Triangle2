@@ -53,4 +53,9 @@ describe('A checkInput() tesztjei', () => {
         let actual = checkInput('233333');
         expect(actual).toBe(true);
     });
+    it('Ha nem szám van, akkor false-t kapunk?', () =>{
+        let actual = checkInput('aa');
+        expect(actual).toBe(false);
+    });
 });
+
